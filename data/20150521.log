@@ -1,0 +1,12 @@
+May 21 11:31:32  [info] admin (114.124.2.103) op.Login
+May 21 11:32:58  [info] admin (114.124.2.103) op.EditFolder?folderid=1
+May 21 11:33:23  [info] admin (114.124.2.103) op.RemoveFolder
+May 21 11:34:08  [info] admin (114.124.2.103) op.AddSubFolder?name=Sekretariat Badan Litbang ESDM&folderid=1
+May 21 11:34:54  [info] admin (114.124.2.103) op.AddSubFolder?name=Puslitbangtek Migas "Lemigas"&folderid=1
+May 21 11:35:22  [info] admin (114.124.2.103) op.AddSubFolder?name=puslitbangtek ketenagalistrikan, EBT dan KE&folderid=1
+May 21 11:36:19  [info] admin (114.124.2.103) op.AddSubFolder?name=Puslitbangtek Mineral dan Batubara&folderid=1
+May 21 11:36:43  [info] admin (114.124.2.103) op.AddSubFolder?name=Puslitbang Geologi Kelautan&folderid=1
+May 21 11:37:20  [info] admin (114.124.2.103) op.FolderAccess.php?formtoken=4664cddb8b661de026edc4877fad298b&folderid=3&action=notinherit&mode=copy
+May 21 14:44:18  [info] admin (139.194.91.11) op.Login
+May 21 14:44:33  [info] fadhli (139.194.91.11) op.Login
+May 21 14:45:05  [info] admin (139.194.91.11) op.Login

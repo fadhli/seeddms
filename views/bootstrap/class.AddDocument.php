@@ -270,62 +270,9 @@ $(document).ready(function() {
       <td>
 		<?php $this->contentSubHeading(getMLText("assign_reviewers")); ?>
       </td>
-		</tr>	
-		<tr>	
-      <td>
-			<div class="cbSelectTitle"><?php printMLText("individuals");?>:</div>
-      </td>
-      <td>
-<?php
-				$res=$user->getMandatoryReviewers();
-?>
-        <select class="chzn-select span9" name="indReviewers[]" multiple="multiple" data-placeholder="<?php printMLText('select_ind_reviewers'); ?>">
-<?php
-				foreach ($docAccess["users"] as $usr) {
-					if (!$enableselfrevapp && $usr->getID()==$user->getID()) continue; 
-					$mandatory=false;
-					foreach ($res as $r) if ($r['reviewerUserID']==$usr->getID()) $mandatory=true;
-
-					if ($mandatory) print "<option disabled=\"disabled\" value=\"".$usr->getID()."\">". htmlspecialchars($usr->getLogin()." - ".$usr->getFullName())."</option>";
-					else print "<option value=\"".$usr->getID()."\">". htmlspecialchars($usr->getLogin()." - ".$usr->getFullName())."</option>";
-				}
-?>
-        </select>
-<?php
-				/* List all mandatory reviewers */
-				if($res) {
-					$tmp = array();
-					foreach ($res as $r) {
-						if($r['reviewerUserID'] > 0) {
-							$u = $dms->getUser($r['reviewerUserID']);
-							$tmp[] =  htmlspecialchars($u->getFullName().' ('.$u->getLogin().')');
-						}
-					}
-					if($tmp) {
-						echo '<div class="mandatories"><span>'.getMLText('mandatory_reviewers').':</span> ';
-						echo implode(', ', $tmp);
-						echo "</div>\n";
-					}
-				}
-
-				/* Check for mandatory reviewer without access */
-				foreach($res as $r) {
-					if($r['reviewerUserID']) {
-						$hasAccess = false;
-						foreach ($docAccess["users"] as $usr) {
-							if ($r['reviewerUserID']==$usr->getID())
-								$hasAccess = true;
-						}
-						if(!$hasAccess) {
-							$noAccessUser = $dms->getUser($r['reviewerUserID']);
-							echo "<div class=\"alert alert-warning\">".getMLText("mandatory_reviewer_no_access", array('user'=>htmlspecialchars($noAccessUser->getFullName()." (".$noAccessUser->getLogin().")")))."</div>";
-						}
-					}
-				}
-?>
-      </td>
-      </tr>
-      <tr>
+		</tr>
+		<!--removed workflow-->
+		<tr>
         <td>
 			<div class="cbSelectTitle"><?php printMLText("groups");?>:</div>
         </td>

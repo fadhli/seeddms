@@ -79,11 +79,6 @@ function checkForm()
 ?>
 <div class="alert alert-warning">
 <?php echo getMLText("max_upload_size").": ".ini_get( "upload_max_filesize"); ?>
-<?php
-	if($enablelargefileupload) {
-  	printf('<p>'.getMLText('link_alt_updatedocument').'</p>', "out.AddFile2.php?documentid=".$document->getId());
-	}
-?>
 </div>
 <?php
 		$this->contentContainerStart();

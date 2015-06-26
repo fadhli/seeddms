@@ -96,15 +96,6 @@ class SeedDMS_View_AddDocument extends SeedDMS_Blue_Style {
 		<tr>
 			<td class="warning"><?php echo getMLText("max_upload_size")." : ".ini_get( "upload_max_filesize"); ?></td>
 		</tr>
-<?php
-			if($enablelargefileupload) {
-?>
-		<tr>
-			<td><?php printf(getMLText('link_alt_updatedocument'), "out.AddMultiDocument.php?folderid=".$folderid."&showtree=".showtree()); ?></td>
-		</tr>
-<?php
-			}
-?>
 		</table>
 		<?php $this->contentSubHeading(getMLText("document_infos")); ?>
 		

@@ -75,9 +75,9 @@ background-image: linear-gradient(to bottom, #882222, #111111);;
 }
 .jumbotron {
     /* add bootstrap jumbotron background image */
-    background: url("images/banner.jpg");
+    /*background: url("images/banner.jpg");*/
     /* change bootstrap jumbotron text color */
-    color: #006198;
+    background-color: #006198;
 </style>
 <?php
 		}

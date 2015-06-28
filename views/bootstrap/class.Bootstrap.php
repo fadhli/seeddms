@@ -199,7 +199,7 @@ $(document).ready(function () {
 	} /* }}} */
 
 	function jumbotron() { /* {{{ */
-		echo "fadhli";
+		echo "fadhli\n";
 	}
 
 	/**

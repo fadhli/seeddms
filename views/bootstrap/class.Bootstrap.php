@@ -73,11 +73,11 @@ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#882222), to(#11111
 background-image: webkit-linear-gradient(top, #882222, #111111);
 background-image: linear-gradient(to bottom, #882222, #111111);;
 }
-.jumbotron {
+/*.jumbotron {*/
     /* add bootstrap jumbotron background image */
     /*background: url("images/banner.jpg");*/
     /* change bootstrap jumbotron text color */
-    background-color: #006198;
+    /*background-color: #006198;*/
 </style>
 <?php
 		}
@@ -326,7 +326,8 @@ $(document).ready(function () {
 		echo "</div class=\"clearfix\">\n";
 		echo "<div class=\"jumbotron\">\n";
 		echo "	<div class=\"container\">\n";
-		echo "		<h1>Hello, world!</h1>";
+		echo "<div id=\"logo\"><img src='../styles/logo-migas.png'></div>\n";
+		echo "		<h1>Knowledge Management System Balitbang ESDM</h1>";
 		echo "		<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>";
 		echo "		<p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>";
 		echo "	</div>\n";

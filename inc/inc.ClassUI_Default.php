@@ -109,10 +109,6 @@ class UI_Default {
 		return;
 	} /* }}} */
 
-	function jumbotron() { /* {{{ */
-		echo "fadhli\n";
-	}
-
 	function globalNavigation($folder=null) { /* {{{ */
 	
 		global $settings, $user;

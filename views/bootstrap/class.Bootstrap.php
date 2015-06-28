@@ -198,10 +198,6 @@ $(document).ready(function () {
 		echo "</div>\n";
 	} /* }}} */
 
-	function jumbotron() { /* {{{ */
-		echo "fadhli\n";
-	}
-
 	/**
 	 * Returns the html needed for the clipboard list in the menu
 	 *

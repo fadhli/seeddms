@@ -323,6 +323,7 @@ $(document).ready(function () {
 		echo "  </div>\n";
 		echo " </div>\n";
 		echo "</div>\n";
+		echo "</div class=\"clearfix\">\n";
 		echo "<div class=\"jumbotron\" style=\"background-color: #006198;\">\n";
 		echo "	<div class=\"container\">\n";
 		echo "		<h1>Hello, world!</h1>";

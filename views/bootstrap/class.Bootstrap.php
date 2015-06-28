@@ -318,7 +318,6 @@ $(document).ready(function () {
 		echo "  </div>\n";
 		echo " </div>\n";
 		echo "</div>\n";
-		echo "<div class =\"clearfix\">" "</div>";
 		echo "<div class=\"jumbotron\">";
 		echo "	<div class=\"container\">";
 		echo "		<h1>Hello, world!</h1>";

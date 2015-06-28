@@ -326,7 +326,7 @@ $(document).ready(function () {
 		echo "				<div class=\"span1\">\n";
 		echo "					<div id=\"logo\"><img src='../styles/logo-migas.png'></div>\n";
 		echo "				</div>\n";
-		echo "				<div class=\"span11\">\n";
+		echo "				<div class=\"span10\">\n";
 		echo "					<h1>Knowledge Management System </br>Balitbang ESDM</h1>";
 		echo "				</div>\n";
 		echo "			</div>\n";

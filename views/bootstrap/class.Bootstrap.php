@@ -318,13 +318,13 @@ $(document).ready(function () {
 		echo "  </div>\n";
 		echo " </div>\n";
 		echo "</div>\n";
-		echo "<div class=\"jumbotron\">";
-		echo "	<div class=\"container\">";
+		echo "<div class=\"jumbotron\">\n";
+		echo "	<div class=\"container\">\n";
 		echo "		<h1>Hello, world!</h1>";
 		echo "		<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>";
 		echo "		<p><a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more</a></p>";
-		echo "	</div>";
-		echo "</div>";
+		echo "	</div>\n";
+		echo "</div>\n";
 		return;
 	} /* }}} */
 

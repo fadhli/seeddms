@@ -370,9 +370,9 @@ $(document).ready(function () {
 				case "admin_tools":
 					$this->adminToolsNavigationBar();
 					break;
-				case "calendar";
-					$this->calendarNavigationBar($extra);
-					break;
+				// case "calendar";
+				// 	$this->calendarNavigationBar($extra);
+				// 	break;
 			}
 			echo " 	</div>\n";
 			echo " </div>\n";

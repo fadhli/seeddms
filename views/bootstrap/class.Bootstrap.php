@@ -324,7 +324,7 @@ $(document).ready(function () {
 		echo " </div>\n";
 		echo "</div>\n";
 		echo "</div class=\"clearfix\">\n";
-		echo "<div class=\"jumbotron\" style=\"background-color: #006198;\">\n";
+		echo "<div class=\"jumbotron\">\n";
 		echo "	<div class=\"container\">\n";
 		echo "		<h1>Hello, world!</h1>";
 		echo "		<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>";

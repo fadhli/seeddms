@@ -73,6 +73,11 @@ background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#882222), to(#11111
 background-image: webkit-linear-gradient(top, #882222, #111111);
 background-image: linear-gradient(to bottom, #882222, #111111);;
 }
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background: url("images/banner.jpg");
+    /* change bootstrap jumbotron text color */
+    color: #006198;
 </style>
 <?php
 		}

@@ -144,4 +144,11 @@ div.statusbar a.btn {
   z-index: 2;
   border-color: #ddd;
     }
+
+    .jumbotron {
+    /* add bootstrap jumbotron background image */
+    background: url("images/banner.jpg");
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+}
 }

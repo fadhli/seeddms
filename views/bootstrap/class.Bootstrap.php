@@ -323,10 +323,10 @@ $(document).ready(function () {
 		echo "	<div class=\"container-fluid\">\n";
 		echo "		<div class=\"row\">\n";
 		echo "			<div class=\"span12\">\n";
-		echo "				<div class=\"span1\">\n";
+		echo "				<div class=\"span2\">\n";
 		echo "					<div id=\"logo\"><img src='../styles/logo-migas.png'></div>\n";
 		echo "				</div>\n";
-		echo "				<div class=\"span10\">\n";
+		echo "				<div class=\"span9\">\n";
 		echo "					<h1>Knowledge Management System </br>Balitbang ESDM</h1>";
 		echo "				</div>\n";
 		echo "			</div>\n";

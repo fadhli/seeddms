@@ -384,6 +384,17 @@ $(document).ready(function () {
 		return;
 	} /* }}} */
 
+	private function jumbotron() {
+		echo "<div class="jumbotron">";
+		echo "	<div class="container">";
+		echo "		<h1>Hello, world!</h1>";
+		echo "		<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>";
+		echo "		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>";
+		echo "	</div>";
+		echo "</div>";
+	}
+
+
 	private function folderNavigationBar($folder) { /* {{{ */
 		if (!is_object($folder) || strcasecmp(get_class($folder), "SeedDMS_Core_Folder")) {
 			echo "<ul class=\"nav\">\n";

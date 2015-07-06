@@ -75,7 +75,6 @@ if($view) {
 	$view->setParam('workflowmode', $settings->_workflowMode);
 	$view->setParam('previewWidthList', $settings->_previewWidthList);
 	$view->setParam('previewWidthDetail', $settings->_previewWidthDetail);
-	$view->setParam('currenttab', isset($_GET['currenttab']) ? $_GET['currenttab'] : "");
 	$view->show();
 	exit;
 }

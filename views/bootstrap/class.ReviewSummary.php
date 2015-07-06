@@ -135,7 +135,7 @@ class SeedDMS_View_ReviewSummary extends SeedDMS_Bootstrap_Style {
 		if (!$printheader) {
 			echo "</tbody>\n</table>";
 		}else{
-			printMLText("no_docs_to_review");
+			printMLText("empty_notify_list");
 		}
 
 

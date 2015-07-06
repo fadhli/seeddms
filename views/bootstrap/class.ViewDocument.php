@@ -84,7 +84,6 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		$previewwidthlist = $this->params['previewWidthList'];
 		$previewwidthdetail = $this->params['previewWidthDetail'];
 		$documentid = $document->getId();
-		$currenttab = $this->params['currenttab'];
 
 		$versions = $document->getContent();
 
@@ -255,31 +254,31 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 </div>
 <div class="span9">
     <ul class="nav nav-tabs" id="docinfotab">
-		  <li class="<?php if(!$currenttab || $currenttab == 'docinfo') echo 'active'; ?>"><a data-target="#docinfo" data-toggle="tab"><?php printMLText('current_version'); ?></a></li>
+		  <li class="active"><a data-target="#docinfo" data-toggle="tab"><?php printMLText('current_version'); ?></a></li>
 			<?php if (count($versions)>1) { ?>
-		  <li class="<?php if($currenttab == 'previous') echo 'active'; ?>"><a data-target="#previous" data-toggle="tab"><?php printMLText('previous_versions'); ?></a></li>
+		  <li><a data-target="#previous" data-toggle="tab"><?php printMLText('previous_versions'); ?></a></li>
 <?php
 			}
 			if($workflowmode == 'traditional' || $workflowmode == 'traditional_only_approval') {
 				if((is_array($reviewStatus) && count($reviewStatus)>0) ||
 					(is_array($approvalStatus) && count($approvalStatus)>0)) {
 ?>
-		  <li class="<?php if($currenttab == 'revapp') echo 'active'; ?>"><a data-target="#revapp" data-toggle="tab"><?php if($workflowmode == 'traditional') echo getMLText('reviewers')."/"; echo getMLText('approvers'); ?></a></li>
+		  <li><a data-target="#revapp" data-toggle="tab"><?php if($workflowmode == 'traditional') echo getMLText('reviewers')."/"; echo getMLText('approvers'); ?></a></li>
 <?php
 				}
 			} else {
 				if($workflow) {
 ?>
-		  <li class="<?php if($currenttab == 'workflow') echo 'active'; ?>"><a data-target="#workflow" data-toggle="tab"><?php echo getMLText('workflow'); ?></a></li>
+		  <li><a data-target="#workflow" data-toggle="tab"><?php echo getMLText('workflow'); ?></a></li>
 <?php
 				}
 			}
 ?>
-		  <li class="<?php if($currenttab == 'attachments') echo 'active'; ?>"><a data-target="#attachments" data-toggle="tab"><?php printMLText('linked_files'); echo (count($files)) ? " (".count($files).")" : ""; ?></a></li>
-		  <li class="<?php if($currenttab == 'links') echo 'active'; ?>"><a data-target="#links" data-toggle="tab"><?php printMLText('linked_documents'); echo (count($links)) ? " (".count($links).")" : ""; ?></a></li>
+		  <li><a data-target="#attachments" data-toggle="tab"><?php printMLText('linked_files'); echo (count($files)) ? " (".count($files).")" : ""; ?></a></li>
+		  <li><a data-target="#links" data-toggle="tab"><?php printMLText('linked_documents'); echo (count($links)) ? " (".count($links).")" : ""; ?></a></li>
 		</ul>
 		<div class="tab-content">
-		  <div class="tab-pane <?php if(!$currenttab || $currenttab == 'docinfo') echo 'active'; ?>" id="docinfo">
+		  <div class="tab-pane active" id="docinfo">
 <?php
 		if(!$latestContent) {
 			$this->contentContainerStart();
@@ -389,12 +388,12 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 			if($accessop->maySetReviewersApprovers()) {
 				print "<li><a href='../out/out.SetReviewersApprovers.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-edit\"></i>".getMLText("change_assignments")."</a></li>";
 			}
-		} else {
-			if($accessop->maySetWorkflow()) {
-				if(!$workflow) {
-					print "<li><a href='../out/out.SetWorkflow.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-random\"></i>".getMLText("set_workflow")."</a></li>";
-				}
-			}
+		// } else {
+		// 	if($accessop->maySetWorkflow()) {
+		// 		if(!$workflow) {
+		// 			print "<li><a href='../out/out.SetWorkflow.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-random\"></i>".getMLText("set_workflow")."</a></li>";
+		// 		}
+		// 	}
 		}
 		/*
 		if($accessop->maySetExpires()) {
@@ -459,16 +458,12 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 			if((is_array($reviewStatus) && count($reviewStatus)>0) ||
 				(is_array($approvalStatus) && count($approvalStatus)>0)) {
 ?>
-		  <div class="tab-pane <?php if($currenttab == 'revapp') echo 'active'; ?>" id="revapp">
+		  <div class="tab-pane" id="revapp">
 <?php
 		$this->contentContainerstart();
 		print "<table class=\"table-condensed\">\n";
 
-		/* Just check fo an exting reviewStatus, even workflow mode is set
-		 * to traditional_only_approval. There may be old documents which
-		 * are still in S_DRAFT_REV.
-		 */
-		if (/* $workflowmode != 'traditional_only_approval' && */ is_array($reviewStatus) && count($reviewStatus)>0) {
+		if ($workflowmode != 'traditional_only_approval' && is_array($reviewStatus) && count($reviewStatus)>0) {
 
 			print "<tr><td colspan=5>\n";
 			$this->contentSubHeading(getMLText("reviewers"));
@@ -584,7 +579,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 				print "<td><ul class=\"unstyled\">";
 
 				if($accessop->mayApprove()) {
-					if ($is_approver && $a['status'] == 0 /* $status["status"]==S_DRAFT_APP */) {
+					if ($is_approver && $status["status"]==S_DRAFT_APP) {
 						print "<li><a class=\"btn btn-mini\" href=\"../out/out.ApproveDocument.php?documentid=".$documentid."&version=".$latestContent->getVersion()."&approveid=".$a['approveID']."\">".getMLText("add_approval")."</a></li>";
 					}else if (($updateUser==$user)&&(($a["status"]==1)||($a["status"]==-1))&&(!$document->hasExpired())){
 						print "<li><a class=\"btn btn-mini\" href=\"../out/out.ApproveDocument.php?documentid=".$documentid."&version=".$latestContent->getVersion()."&approveid=".$a['approveID']."\">".getMLText("edit")."</a></li>";
@@ -603,17 +598,12 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 ?>
 			<div class="row-fluid">
 <?php
-			/* Check for an existing review log, even if the workflowmode
-			 * is set to traditional_only_approval. There may be old documents
-			 * that still have a review log if the workflow mode has been
-			 * changed afterwards.
-			 */
-			if($latestContent->getReviewStatus(10) /*$workflowmode != 'traditional_only_approval'*/) {
+			if($workflowmode != 'traditional_only_approval') {
 ?>
 				<div class="span6">
 				<legend><?php printMLText('review_log'); ?></legend>
 				<table class="table condensed">
-					<tr><th><?php printMLText('name'); ?></th><th><?php printMLText('last_update'); ?>, <?php printMLText('comment'); ?></th><th><?php printMLText('status'); ?></th></tr>
+					<tr><th><?php printMLText('name'); ?></th><th><?php printMLText('last_update'); ?>/<?php printMLText('comment'); ?></th><th><?php printMLText('status'); ?></th></tr>
 <?php
 					$reviewStatusList = $latestContent->getReviewStatus(10);
 					foreach($reviewStatusList as $rec) {
@@ -666,7 +656,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 				<div class="span6">
 				<legend><?php printMLText('approval_log'); ?></legend>
 				<table class="table condensed">
-					<tr><th><?php printMLText('name'); ?></th><th><?php printMLText('last_update'); ?>, <?php printMLText('comment'); ?></th><th><?php printMLText('status'); ?></th></tr>
+					<tr><th><?php printMLText('name'); ?></th><th><?php printMLText('last_update'); ?>/<?php printMLText('comment'); ?></th><th><?php printMLText('status'); ?></th></tr>
 <?php
 					$approvalStatusList = $latestContent->getApprovalStatus(10);
 					foreach($approvalStatusList as $rec) {
@@ -723,7 +713,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		} else {
 			if($workflow) {
 ?>
-		  <div class="tab-pane <?php if($currenttab == 'workflow') echo 'active'; ?>" id="workflow">
+		  <div class="tab-pane" id="workflow">
 <?php
 			$this->contentContainerStart();
 			if($user->isAdmin()) {
@@ -904,7 +894,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		}
 		if (count($versions)>1) {
 ?>
-		  <div class="tab-pane <?php if($currenttab == 'previous') echo 'active'; ?>" id="previous">
+		  <div class="tab-pane" id="previous">
 <?php
 			$this->contentContainerStart();
 
@@ -997,7 +987,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 <?php
 		}
 ?>
-		  <div class="tab-pane <?php if($currenttab == 'attachments') echo 'active'; ?>" id="attachments">
+		  <div class="tab-pane" id="attachments">
 <?php
 
 		$this->contentContainerStart();
@@ -1073,7 +1063,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		$this->contentContainerEnd();
 ?>
 		  </div>
-		  <div class="tab-pane <?php if($currenttab == 'links') echo 'active'; ?>" id="links">
+		  <div class="tab-pane" id="links">
 <?php
 		$this->contentContainerStart();
 		if (count($links) > 0) {

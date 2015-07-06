@@ -44,12 +44,13 @@ if ($action == "addworkflowaction") {
 	}
 
 	$name    = $_POST["name"];
+	$docstatus = $_POST["docstatus"];
 
 	if (is_object($dms->getWorkflowActionByName($name))) {
 		UI::exitError(getMLText("admin_tools"),getMLText("workflow_action_exists"));
 	}
 
-	$newWorkflowaction = $dms->addWorkflowAction($name);
+	$newWorkflowaction = $dms->addWorkflowAction($name, $docstatus);
 	if (!$newWorkflowaction) {
 		UI::exitError(getMLText("admin_tools"),getMLText("error_occured"));
 	}

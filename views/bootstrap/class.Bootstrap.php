@@ -169,8 +169,6 @@ $(document).ready(function () {
 		echo "</div>\n";
 		echo "</div>\n";
 		echo "</div>\n";
-
-		$this->addFooterJS('$(function(){  $("#searchfield").focus( function(){ $("[name=\"fullsearch\"]").attr("checked", true); }); });');
 	
 		return;
 	} /* }}} */
@@ -296,16 +294,11 @@ $(document).ready(function () {
 			echo "   <ul class=\"nav\">\n";
 	//		echo "    <li id=\"first\"><a href=\"../out/out.ViewFolder.php?folderid=".$this->params['rootfolderid']."\">".getMLText("content")."</a></li>\n";
 	//		echo "    <li><a href=\"../out/out.SearchForm.php?folderid=".$this->params['rootfolderid']."\">".getMLText("search")."</a></li>\n";
-			
-			/**
-			 * Edited by Habli Muhammad Rizal
-			 * if ($this->params['enablecalendar']) echo "    <li><a href=\"../out/out.Calendar.php?mode=".$this->params['calendardefaultview']."\">".getMLText("calendar")."</a></li>\n";
-			 */
-
+			// if ($this->params['enablecalendar']) echo "    <li><a href=\"../out/out.Calendar.php?mode=".$this->params['calendardefaultview']."\">".getMLText("calendar")."</a></li>\n";
 			if ($this->params['user']->isAdmin()) echo "    <li><a href=\"../out/out.AdminTools.php\">".getMLText("admin_tools")."</a></li>\n";
 			echo "    <li><a href=\"../out/out.Help.php\">".getMLText("help")."</a></li>\n";
 			echo "   </ul>\n";
-			echo "     <form action=\"../op/op.Search.php\" class=\"form-inline navbar-search pull-left\" autocomplete=\"on\">";
+			echo "     <form action=\"../op/op.Search.php\" class=\"form-inline navbar-search pull-left\" autocomplete=\"off\">";
 			if ($folder!=null && is_object($folder) && !strcasecmp(get_class($folder), "SeedDMS_Core_Folder")) {
 				echo "      <input type=\"hidden\" name=\"folderid\" value=\"".$folder->getID()."\" />";
 			}
@@ -316,14 +309,22 @@ $(document).ready(function () {
 			echo "      <input type=\"hidden\" name=\"searchin[]\" value=\"4\" />";
 			echo "      <input name=\"query\" class=\"search-query\" id=\"searchfield\" data-provide=\"typeahead\" type=\"text\" style=\"width: 150px;\" placeholder=\"".getMLText("search")."\"/>";
 			if($this->params['enablefullsearch']) {
-				echo "      <label class=\"checkbox hide\" style=\"color: #999999;\"><input type=\"checkbox\" name=\"fullsearch\" value=\"1\" title=\"".getMLText('fullsearch_hint')."\"/> ".getMLText('fullsearch')."</label>"; // EDITED
+				echo "      <label class=\"checkbox\" style=\"color: #999999;\"><input type=\"checkbox\" name=\"fullsearch\" value=\"1\" title=\"".getMLText('fullsearch_hint')."\"/> ".getMLText('fullsearch')."</label>";
 			}
-			// echo "      <input type=\"submit\" value=\"".getMLText("search")."\" id=\"searchButton\" class=\"btn\"/>";
+	//		echo "      <input type=\"submit\" value=\"".getMLText("search")."\" id=\"searchButton\" class=\"btn\"/>";
 			echo "</form>\n";
 			echo "    </div>\n";
 		}
 		echo "  </div>\n";
 		echo " </div>\n";
+		echo "</div>\n";
+		echo "</div class=\"clearfix\">\n";
+		echo "<div class=\"jumbotron\">\n";
+		echo "	<div class=\"container-fluid\">\n";
+		echo "		<div class=\"row\">\n";
+		echo "			<div id=\"logo\"><img src='../styles/logo-migas.png'></div>\n";
+		echo "		</div>\n";
+		echo "	</div>\n";
 		echo "</div>\n";
 		return;
 	} /* }}} */
@@ -410,7 +411,7 @@ $(document).ready(function () {
 			echo "<li id=\"first\"><a href=\"../out/out.AddSubFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_subfolder")."</a></li>\n";
 			echo "<li><a href=\"../out/out.AddDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_document")."</a></li>\n";
 			if($this->params['enablelargefileupload'])
-				echo "<li><a href=\"../out/out.AddMultiDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_multiple_documents")."</a></li>\n";
+				// echo "<li><a href=\"../out/out.AddMultiDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_multiple_documents")."</a></li>\n";
 			echo "<li><a href=\"../out/out.EditFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("edit_folder_props")."</a></li>\n";
 			if ($folderID != $this->params['rootfolderid'] && $folder->getParent())
 				echo "<li><a href=\"../out/out.MoveFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("move_folder")."</a></li>\n";

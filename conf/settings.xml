@@ -7,7 +7,7 @@
        - language: default language (name of a subfolder in folder "languages")
        - theme: default style (name of a subfolder in folder "styles")
     -->
-    <display siteName="KMS Balitbang ESDM" footNote="Knowledge Management System" printDisclaimer="true" language="id_ID" theme="esdm" previewWidthList="40" previewWidthDetail="100">  
+    <display siteName="ESDM" footNote="Knowledge Management Kementrian Energi dan Sumber Daya Energi" printDisclaimer="true" language="en_GB" theme="blue" previewWidthList="40" previewWidthDetail="100">  
     </display>
     <!-- strictFormCheck: Strict form checking. If set to true, then all fields in the form will be checked for a value. If set to false, then (most) comments and keyword fields become optional. Comments are always required when submitting a review or overriding document status.
        - viewOnlineFileTypes: files with one of the following endings can be viewed online (USE ONLY LOWER CASE CHARACTERS)
@@ -22,14 +22,15 @@
        -                   2 to start with tree shown fully expanded     
        - stopWordsFile: path to stop word file for indexer
        - sortUsersInList: how to sort users in lists ('fullname' or '' (default))
+       - sortFoldersDefault: how to sort folders and documents in folder view  ('n' (name) or 's' (sequence, default))
     -->   
-    <edition strictFormCheck="false" viewOnlineFileTypes=".txt;.text;.html;.htm;.pdf;.gif;.png;.jpg;.jpeg" enableConverting="true" enableEmail="true" enableUsersView="true" enableFullSearch="true" enableFolderTree="true" expandFolderTree="1" enableLanguageSelector="true" stopWordsFile="" sortUsersInList="" enableRecursiveCount="false" maxRecursiveCount="0" enableClipboard="true" enableThemeSelector="false" sortFoldersDefault="n" enableDropUpload="true">
+    <edition strictFormCheck="false" viewOnlineFileTypes=".txt;.text;.html;.htm;.pdf;.gif;.png;.jpg;.jpeg" enableConverting="true" enableEmail="true" enableUsersView="true" enableFullSearch="true" enableFolderTree="true" expandFolderTree="1" enableLanguageSelector="true" stopWordsFile="" sortUsersInList="" sortFoldersDefault="s" enableClipboard="false" enableDropUpload="false" enableRecursiveCount="true" maxRecursiveCount="0" enableThemeSelector="false">
     </edition> 
     <!-- enableCalendar: enable/disable calendar
        - calendarDefaultView: calendar default view ("w" for week,"m" for month,"y" for year)
        - firstDayOfWeek: first day of the week (0=sunday, 6=saturday)
     -->  
-    <calendar enableCalendar="false" calendarDefaultView="m" firstDayOfWeek="1">
+    <calendar enableCalendar="true" calendarDefaultView="y" firstDayOfWeek="0">
     </calendar>
   </site>
   
@@ -46,7 +47,7 @@
        - logFileEnable: set false to disable log system
        - logFileRotation: the log file rotation (h=hourly, d=daily, m=monthly)
     -->
-    <server rootDir="/Users/rizalmovic/Projects/seed-dms/www/" httpRoot="/" contentDir="/Users/rizalmovic/Projects/seed-dms/data/" stagingDir="/Users/rizalmovic/Projects/seed-dms/data/staging/" luceneDir="/Users/rizalmovic/Projects/seed-dms/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="true" partitionSize="2000000" cacheDir="/Users/rizalmovic/Projects/seed-dms/data/cache/" dropFolderDir="">
+    <server rootDir="/var/www/html/" httpRoot="/" contentDir="/var/www/html/data/" stagingDir="/var/www/html/data/staging/" luceneDir="/var/www/html/data/lucene/" logFileEnable="true" logFileRotation="d" enableLargeFileUpload="true" partitionSize="2000000" cacheDir="" dropFolderDir="">
     </server>
     
     <!-- enableGuestLogin: If you want anybody to login as guest, set the following line to true
@@ -61,7 +62,7 @@
 			 - passwordStrengthAlgorithm: algorithm used to calculate password strenght (simple or advanced)
 			 - encryptionKey: arbitrary string used for creating identifiers
     -->    
-    <authentication enableGuestLogin="false" enablePasswordForgotten="false" restricted="true" enableUserImage="false" disableSelfEdit="false" passwordStrength="0" passwordExpiration="0" passwordHistory="0" passwordStrengthAlgorithm="simple" loginFailure="0" encryptionKey="d20c4a7e15032ae51a5fe02f504836a5" quota="0" cookieLifetime="0" undelUserIds="">
+    <authentication enableGuestLogin="false" enablePasswordForgotten="false" restricted="true" enableUserImage="false" disableSelfEdit="false" passwordStrength="0" passwordExpiration="0" passwordHistory="0" passwordStrengthAlgorithm="simple" loginFailure="0" encryptionKey="5fda14cbb3820285b16f6eef5a4e2f24" quota="0" undelUserIds="" cookieLifetime="0">
       <connectors>
         <!-- ***** CONNECTOR LDAP  *****
            - enable: enable/disable connector
@@ -71,7 +72,7 @@
            - port: port of the authentification server
            - baseDN: top level of the LDAP directory tree
         -->  
-        <connector enable="false" type="ldap" host="ldaps://ldap.host.com" port="389" baseDN="">
+        <connector enable="false" type="ldap" host="ldaps://ldap.host.com" port="389" baseDN="" bindDN="" bindPw="">
         </connector>
         <!-- ***** CONNECTOR Microsoft Active Directory  *****
            - enable: enable/disable connector
@@ -81,7 +82,7 @@
            - baseDN: top level of the LDAP directory tree
            - accountDomainName: sample: example.com
         -->  
-        <connector enable="false" type="AD" host="ldap.example.com" port="389" baseDN="" accountDomainName="example.com">
+        <connector enable="false" type="AD" host="ldap.example.com" port="389" baseDN="" accountDomainName="example.com" bindDN="" bindPw="">
         </connector>
       </connectors>
     </authentication>
@@ -92,13 +93,13 @@
        - dbUser: username for database-access
        - dbPass: password for database-access
     -->    
-    <database dbDriver="mysql" dbHostname="localhost" dbDatabase="seeddms" dbUser="root" dbPass="root">
+    <database dbDriver="mysql" dbHostname="localhost" dbDatabase="seeddms" dbUser="seeddms" dbPass="seeddms">
     </database>
     <!-- smtpServer: SMTP Server hostname
        - smtpPort: SMTP Server port
        - smtpSendFrom: Send from
     -->    
-    <smtp smtpServer="localhost" smtpPort="25" smtpSendFrom="seeddms@localhost"/>    
+    <smtp smtpServer="smtp.gmail.com" smtpPort="465" smtpSendFrom="e.fadhli@gmail.com"/>    
   </system>
  
   
@@ -106,6 +107,7 @@
     <!-- siteDefaultPage: Default page on login. Defaults to out/out.ViewFolder.php
        - rootFolderID: ID of root-folder (mostly no need to change)
        - titleDisplayHack: Workaround for page titles that go over more than 2 lines.
+       - showMissingTranslations: Check for missing translations and adds forms at the end of the page for submitting new translations.
     -->  
     <display siteDefaultPage="" rootFolderID="1" titleDisplayHack="true" showMissingTranslations="false">
     </display>
@@ -139,10 +141,10 @@
        - updateNotifyTime: users are notified about document-changes that took place within the last "updateNotifyTime" seconds
        - extraPath: Path to addtional software. This is the directory containing additional software like the adodb directory, or the pear Log package. This path will be added to the php include path
     -->
-    <server coreDir="" luceneClassDir="" contentOffsetDir="1048576" maxDirID="0" updateNotifyTime="86400" extraPath="/Users/rizalmovic/Projects/seed-dms/pear/" maxExecutionTime="30">
+    <server coreDir="" luceneClassDir="" contentOffsetDir="1048576" maxDirID="0" updateNotifyTime="86400" extraPath="" maxExecutionTime="30">
     </server>
     <converters>
-		 <converter mimeType="application/pdf">pdftotext -nopgbrk %s - | sed -e 's/ [a-zA-Z0-9.]\{1\} / /g' -e 's/[0-9.]//g'</converter>
+		 <converter mimeType="application/pdf">pdftotext -enc UTF-8 -nopgbrk %s - | sed -e 's/ [a-zA-Z0-9.]\{1\} / /g' -e 's/[0-9.]//g'</converter>
      <converter mimeType="application/msword">catdoc %s</converter>
      <converter mimeType="application/vnd.ms-excel">ssconvert -T Gnumeric_stf:stf_csv -S %s fd://1</converter>
      <converter mimeType="audio/mp3">id3 -l -R %s | egrep '(Title|Artist|Album)' | sed 's/^[^:]*: //g'</converter>

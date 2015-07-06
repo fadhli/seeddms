@@ -23,7 +23,7 @@ header("Location: ". (isset($settings->_siteDefaultPage) && strlen($settings->_s
 ?>
 <html>
 <head>
-	<title>SeedDMS</title>
+	<title>KMS Balitbang ESDM</title>
 </head>
 
 <body>

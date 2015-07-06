@@ -1,15 +1,4 @@
 --------------------------------------------------------------------------------
-                     Changes in version 4.3.18
---------------------------------------------------------------------------------
-- utils/indexer.php uses propper converter settings
-- search result can be restricted to folders or documents only
-- documents still in review can still be reviewed even if the workflow
-  mode changes to traditional_only_approval
-- approvals can be submitted, even if document was released/rejected
-- check for duplicate content on document/folder check page
-- open tab on ViewDocument page as specified in URL
-
---------------------------------------------------------------------------------
                      Changes in version 4.3.17
 --------------------------------------------------------------------------------
 - when adding a document, notifications can be specified

@@ -1,0 +1,16 @@
+Jul 06 01:17:23  [info] admin (127.0.0.1) op.AddDocument?name=New&folderid=1
+Jul 06 01:18:43  [info] admin (127.0.0.1) op.AddDocument?name=Oreilly.JavaScript.The.Good.Parts.May.2008&folderid=1
+Jul 06 01:23:55  [info] user (127.0.0.1) op.Login
+Jul 06 01:24:39  [info] admin (127.0.0.1) op.AddSubFolder?name=User&folderid=1
+Jul 06 01:24:57  [info] admin (127.0.0.1) op.FolderAccess.php?formtoken=07fd2c1d9487e80c64145c08e21d4215&action=setowner&folderid=2&ownerid=3
+Jul 06 01:34:05  [info] user (127.0.0.1) op.AddDocument?name=Javascript Enlightment&folderid=2
+Jul 06 01:35:27  [info] user (127.0.0.1) op.AddDocument?name=jQuery Enlightment&folderid=2
+Jul 06 01:36:07  [info] user (127.0.0.1) op.ViewOnline.php?documentid=5&version=1
+Jul 06 01:40:42  [info] user (127.0.0.1) op.Login
+Jul 06 02:00:20  [info] user (127.0.0.1) op.Login
+Jul 06 02:01:12  [info] user (127.0.0.1) op.Login
+Jul 06 20:33:15  [info] admin (139.195.46.56) op.AddDocument?name=data riwayat hidup arif rahman&folderid=1
+Jul 06 21:49:23  [info] admin (139.195.46.56) op.ViewOnline.php?documentid=3&version=1
+Jul 06 21:52:59  [info] admin (139.195.46.56) op.Ajax.php?command=deletedocument&id=21&formtoken=c4e4b30a56ca5090a9c9b7966ec88da7
+Jul 06 22:49:05  [info] admin (139.195.46.56) op.Login
+Jul 06 23:58:47  [info] admin (139.195.46.56) op.Login

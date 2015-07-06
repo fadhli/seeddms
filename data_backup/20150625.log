@@ -1,0 +1,75 @@
+Jun 25 16:36:17  [info] admin (118.136.42.45) op.Login
+Jun 25 16:38:40  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:38:45  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:38:52  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:38:57  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:02  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:06  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:11  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:16  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:22  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:27  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:31  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:38  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 16:39:43  [info] admin (118.136.42.45) op.RemoveFolder
+Jun 25 17:42:32  [info] admin (118.136.42.45) op.Login
+Jun 25 17:43:22  [info] admin (139.195.46.56) op.Login
+Jun 25 17:45:20  [info] user011 (139.195.46.56) op.Login
+Jun 25 17:47:06  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jun 25 18:53:38  [info] admin (118.136.42.45) op.Login
+Jun 25 18:53:47  [info] admin (118.136.42.45) op.AddSubFolder?name=Sekretariat Badan Penelitian dan Pengembangan Energi dan Sumber Daya Mineral&folderid=1
+Jun 25 18:54:04  [info] admin (118.136.42.45) op.AddSubFolder?name=Pusat Penelitian dan Pengembangan Teknologi Minyak dan Gas Bumi "LEMIGAS"&folderid=1
+Jun 25 18:54:22  [info] admin (118.136.42.45) op.AddSubFolder?name=Pusat Penelitian dan Pengembangan Teknologi Ketenagalistrikan, Energi Baru, Terbarukan dan Konservasi Energi&folderid=1
+Jun 25 18:54:37  [info] admin (118.136.42.45) op.AddSubFolder?name=Pusat Penelitian dan Pengembangan Teknologi Mineral dan Batubara&folderid=1
+Jun 25 18:54:49  [info] admin (118.136.42.45) op.AddSubFolder?name=Pusat Penelitian dan Pengembangan Geologi Kelautan&folderid=1
+Jun 25 19:17:32  [info] admin (118.136.42.45) op.AddDocument UI:exitError error=Uploading an empty file. Upload is canceled. pagetitle=Folder 'Knowledge Management Litbang ESDM'
+Jun 25 19:17:48  [info] admin (118.136.42.45) op.AddDocument?name=example&folderid=1
+Jun 25 19:17:53  [info] admin (118.136.42.45) op.ViewOnline.php?documentid=1&version=1
+Jun 25 19:20:19  [info] admin (118.136.42.45) op.Login
+Jun 25 19:22:17  [info] admin (118.136.42.45) op.AddDocument?name=costumer&folderid=1
+Jun 25 19:22:23  [info] admin (118.136.42.45) op.Download.php?documentid=2&version=1
+Jun 25 19:35:47  [info] admin (139.195.46.56) op.Login
+Jun 25 19:52:45  [info] admin (139.195.46.56) op.Ajax.php?command=deletedocument&id=1&formtoken=4a32d81d9f9c236ad500b5aceeb5ab41
+Jun 25 19:53:05  [info] admin (139.195.46.56) op.Download.php?documentid=2&vfile=1
+Jun 25 19:54:58  [info] admin (139.195.46.56) op.Ajax.php?command=tooglelockdocument&id=2
+Jun 25 19:54:58  [info] admin (139.195.46.56) op.Ajax.php?command=view&view=documentlistrow&id=2
+Jun 25 19:55:04  [info] admin (139.195.46.56) op.Ajax.php?command=tooglelockdocument&id=2
+Jun 25 19:55:04  [info] admin (139.195.46.56) op.Ajax.php?command=view&view=documentlistrow&id=2
+Jun 25 20:06:26  [info] admin (139.195.46.56) op.EditFolder?folderid=2
+Jun 25 20:07:07  [info] admin (139.195.46.56) op.EditFolder?folderid=2
+Jun 25 20:08:12  [info] admin (139.195.46.56) op.AddSubFolder?name=E-Book&folderid=1
+Jun 25 20:14:08  [info] admin (139.195.46.56) op.EditFolder?folderid=7
+Jun 25 20:14:37  [info] admin (139.195.46.56) op.AddSubFolder?name=Datawarehouse&folderid=7
+Jun 25 20:14:49  [info] admin (139.195.46.56) op.AddSubFolder?name=Microsoft Office&folderid=7
+Jun 25 20:15:15  [info] admin (139.195.46.56) op.AddSubFolder?name=Big Data&folderid=7
+Jun 25 20:16:50  [info] admin (139.195.46.56) op.AddDocument UI::exitError error=Invalid Request Token pagetitle=Folder 'Invalid Request Token'
+Jun 25 20:25:32  [info] admin (139.195.46.56) op.EditFolder?folderid=2
+Jun 25 20:26:35  [info] admin (139.195.46.56) op.AddSubFolder?name=Sekretariat Balitbang ESDM&folderid=2
+Jun 25 20:27:19  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbang Teknologi Minyak & Gas Bumi "LEMIGAS"&folderid=2
+Jun 25 20:28:42  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbangtek Ketenagalistrikan, EBT, dan KE &folderid=2
+Jun 25 20:29:01  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbangtek Mineral dan Batubara&folderid=2
+Jun 25 20:29:21  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbang Geologi dan Kelautan&folderid=2
+Jun 25 20:29:32  [info] admin (139.195.46.56) op.EditFolder?folderid=12
+Jun 25 20:30:31  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=7&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:30:34  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=6&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:30:36  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=5&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:30:39  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=4&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:36:18  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=3&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:36:22  [info] admin (139.195.46.56) op.Ajax.php?command=deletedocument&id=2&formtoken=4a32d81d9f9c236ad500b5aceeb5ab41
+Jun 25 20:36:27  [info] admin (139.195.46.56) op.Ajax.php?command=deletefolder&id=2&formtoken=4bd49a014b251591725b31394660845b
+Jun 25 20:37:13  [info] admin (139.195.46.56) op.EditFolder?folderid=1
+Jun 25 20:37:46  [info] admin (139.195.46.56) op.AddSubFolder?name=Sekretariat Balitbang ESDM&folderid=1
+Jun 25 20:38:12  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbangtek Minyak & Gas Bumi "LEMIGAS"&folderid=1
+Jun 25 20:38:26  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbangtek Ketenagalistrikan, EBT, dan KE &folderid=1
+Jun 25 20:38:35  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbangtek Mineral dan Batubara&folderid=1
+Jun 25 20:38:43  [info] admin (139.195.46.56) op.AddSubFolder?name=Puslitbang Geologi dan Kelautan&folderid=1
+Jun 25 20:42:55  [info] admin (139.195.46.56) op.AddDocument?name=The Microsoft Datawarehouse Toolkit&folderid=16
+Jun 25 20:48:04  [info] admin (139.195.46.56) op.ViewOnline.php?documentid=3&version=1
+Jun 25 20:50:18  [info] admin (139.195.46.56) op.LockDocument.php?documentid=3
+Jun 25 20:52:19  [info] admin (139.195.46.56) op.AddFile?name=Building a Data Warehouse&documentid=3
+Jun 25 20:54:34  [info] admin (139.195.46.56) op.UnlockDocument.php?documentid=3
+Jun 25 20:55:02  [info] admin (139.195.46.56) op.LockDocument.php?documentid=3
+Jun 25 20:55:06  [info] admin (139.195.46.56) op.UnlockDocument.php?documentid=3
+Jun 25 21:04:03  [info] admin (139.195.46.56) op.Ajax.php?command=subtree&showdocs=1&orderby=&node=16&_=1435241040985
+Jun 25 21:04:52  [info] admin (139.195.46.56) op.RemoveDocumentFile?documentid=3&fileid=1
+Jun 25 21:13:46  [info] admin (139.195.46.56) op.AddDocument UI::exitError error=Uploading an empty file. Upload is canceled. pagetitle=Folder 'KMS BALITBANG ESDM'

@@ -1,0 +1,62 @@
+Jul 07 00:00:25  [info] admin (139.195.46.56) op.Login
+Jul 07 00:02:29  [info] -- (118.137.222.131) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:02:52  [info] user011 (118.137.222.131) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:05:13  [info] user011 (118.137.222.131) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:06:26  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:06:36  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:06:46  [info] admin (139.195.46.56) op.Login
+Jul 07 00:06:57  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:57  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:57  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:58  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:58  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:58  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:58  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:06:58  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:07:03  [info] admin (139.195.46.56) op.UsrMgr.php&action=edituser&userid=4
+Jul 07 00:07:14  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:07:24  [info] user011 (139.195.46.56) op.Login
+Jul 07 00:07:56  [info] user032 (139.195.46.56) op.Login
+Jul 07 00:08:24  [info] user032 (139.195.46.56) op.Login
+Jul 07 00:08:48  [info] admin (139.195.46.56) op.Login
+Jul 07 00:09:21  [info] user011 (118.137.222.131) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:09:59  [info] user011 (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 00:11:02  [info] admin (139.195.46.56) op.Login
+Jul 07 00:11:36  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:37  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:37  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:37  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:37  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:38  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:38  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:38  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:11:38  [info] admin (139.195.46.56) op.Ajax
+Jul 07 00:12:00  [info] admin (139.195.46.56) op.UsrMgr.php&action=adduser&login=user111
+Jul 07 00:12:16  [info] user111 (139.195.46.56) op.Login
+Jul 07 00:15:22  [info] admin (139.195.46.56) op.UsrMgr.php&action=edituser&userid=10
+Jul 07 00:17:00  [info] admin (139.195.46.56) op.FolderAccess.php?formtoken=9a02d0f4c20e8b610938e2c9694d11df&action=setowner&folderid=20&ownerid=10
+Jul 07 00:21:09  [info] user111 (139.195.46.56) op.AddDocument?name=Buku RPJMN&folderid=20
+Jul 07 00:21:37  [info] user111 (139.195.46.56) op.AddDocument UI::exitError error=Invalid Request Token pagetitle=Folder 'Invalid Request Token'
+Jul 07 00:27:26  [info] user111 (139.195.46.56) op.AddDocument?name=Buku RPJMN&folderid=20
+Jul 07 00:28:22  [info] user111 (139.195.46.56) op.AddDocument?name=Buku RPJMN&folderid=20
+Jul 07 00:29:13  [info] user111 (139.195.46.56) op.AddDocument?name=Draft KAK&folderid=20
+Jul 07 00:30:56  [info] user111 (139.195.46.56) op.AddDocument?name=Draft KAK &folderid=20
+Jul 07 00:32:55  [info] user111 (139.195.46.56) op.AddDocument?name=data center PU&folderid=20
+Jul 07 01:15:38  [info] user011 (139.195.46.56) op.Login
+Jul 07 01:16:07  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 01:16:22  [info] -- (139.195.46.56) op.Login UI::exitError error=Error signing in. User ID or password incorrect. pagetitle=Sign in error
+Jul 07 01:16:32  [info] user111 (139.195.46.56) op.Login
+Jul 07 01:36:09  [info] user111 (139.195.46.56) op.Login
+Jul 07 01:40:56  [info] user111 (139.195.46.56) op.Download.php?documentid=10&vfile=1
+Jul 07 01:41:28  [info] admin (139.195.46.56) op.Login
+Jul 07 01:42:54  [info] admin (139.195.46.56) op.LockDocument.php?documentid=10
+Jul 07 01:43:02  [info] admin (139.195.46.56) op.UnlockDocument.php?documentid=10
+Jul 07 01:43:11  [info] admin (139.195.46.56) op.Download.php?documentid=10&vfile=1
+Jul 07 01:44:41  [info] admin (139.195.46.56) op.ViewOnline.php?documentid=3&version=1
+Jul 07 01:46:28  [info] user111 (139.195.46.56) op.Login
+Jul 07 01:47:33  [info] user111 (139.195.46.56) op.Download.php?documentid=3&vfile=1
+Jul 07 01:51:36  [info] admin (139.195.46.56) op.Login
+Jul 07 01:54:15  [info] admin (139.195.46.56) op.FolderAccess.php?formtoken=40bb678105015ced3faf734c7e8e7054&folderid=1&action=addaccess&userid=10&groupid=1&mode=3
+Jul 07 01:54:30  [info] user111 (139.195.46.56) op.Login
+Jul 07 03:22:31  [info] admin (139.195.46.56) op.Login
+Jul 07 03:29:39  [info] admin (139.195.46.56) op.Login

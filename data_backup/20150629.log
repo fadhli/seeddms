@@ -1,0 +1,13 @@
+Jun 29 03:23:53  [info] admin (111.94.244.186) op.AddDocument?name=Industri Minyak Bumi&folderid=17
+Jun 29 03:24:17  [info] admin (111.94.244.186) op.EditFolder?folderid=17
+Jun 29 03:24:27  [info] admin (111.94.244.186) op.EditFolder?folderid=17
+Jun 29 03:25:45  [info] admin (111.94.244.186) op.EditFolder?folderid=17
+Jun 29 04:42:14  [info] fadhli (111.94.244.186) op.Login
+Jun 29 06:48:30  [info] admin (111.94.244.186) op.Login
+Jun 29 06:53:01  [info] admin (111.94.244.186) op.AddDocument?name=Pembentukan Minyak Bumi &folderid=16
+Jun 29 06:56:03  [info] admin (111.94.244.186) op.MoveDocument.php?documentid=11&targetid=17&targetnameform1=Puslitbangtek+Minyak+Bumi+dan+Gas+Bumi+%22LEMIGAS%22
+Jun 29 06:58:00  [info] admin (111.94.244.186) op.AddDocument?name=MInyak Bumi dan Gas&folderid=17
+Jun 29 07:03:43  [info] admin (111.94.244.186) op.AddDocument?name=Analisis Batubara Berdasarkan Nilai HGI&folderid=19
+Jun 29 07:06:01  [info] admin (111.94.244.186) op.AddDocument?name=Peningkatan Nilai Kalor Batubara&folderid=19
+Jun 29 07:07:23  [info] admin (111.94.244.186) op.AddDocument?name=pengantar Resource Batubara di Indonesia&folderid=19
+Jun 29 07:08:22  [info] admin (111.94.244.186) op.ViewOnline.php?documentid=15&version=1

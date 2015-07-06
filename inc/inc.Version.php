@@ -20,11 +20,15 @@
 
 class SeedDMS_Version {
 
-	public $_number = "4.3.17";
+	public $_number = "4.3.18";
 	private $_string = "SeedDMS";
 
 	function SeedDMS_Version() {
 		return;
+	}
+
+	function version() {
+		return $this->_number;
 	}
 
 	function banner() {

@@ -1,0 +1,17 @@
+Industri Minyak Bumi (ID 10)
+
+Owner = Administrator <address@server.com>
+Created = 2015-06-29 03:23:53
+
+### Current version ###
+
+Version = 1
+File = INDUSTRI_MINYAK__BUMI.pdf (application/pdf)
+Comment = 
+Status = Released
+
+### Reviewers ###
+
+### Approvers ###
+
+### Previous versions ###

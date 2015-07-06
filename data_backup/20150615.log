@@ -1,0 +1,7 @@
+Jun 15 00:29:55  [info] admin (112.215.63.173) op.Login
+Jun 15 13:42:16  [info] admin (139.193.213.47) op.Login
+Jun 15 13:46:53  [info] admin (139.193.213.47) op.AddDocument UI:exitError error=Uploading an empty file. Upload is canceled. pagetitle=Folder 'SEKRETARIAT DIREKTORAT JENDERAL ENERGI BARU, TERBARUKAN, DAN KONSERVAS'
+Jun 15 13:48:11  [info] admin (139.193.213.47) op.AddDocument?name=Dokumen SRS&folderid=47
+Jun 15 13:48:53  [info] admin (139.193.213.47) op.ViewOnline.php?documentid=11&version=1
+Jun 15 13:50:09  [info] admin (139.193.213.47) op.ViewOnline.php?documentid=11&version=1
+Jun 15 13:52:18  [info] admin (139.193.213.47) op.ViewOnline.php?documentid=11&version=1

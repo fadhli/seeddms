@@ -1,0 +1,36 @@
+May 19 15:59:59  [info] admin (10.0.0.1) op.Login
+May 19 16:30:07  [info] admin (10.0.0.1) op.Login
+May 19 17:23:24  [info] admin (114.124.28.15) op.Login
+May 19 17:25:17  [info] admin (139.194.91.11) op.Login
+May 19 17:28:14  [info] admin (139.194.91.11) op.Settings.php&action=savesettings
+May 19 17:28:41  [info] admin (139.194.91.11) op.Settings.php&action=savesettings
+May 19 17:29:39  [info] admin (139.194.91.11) op.Settings.php&action=savesettings
+May 19 17:31:18  [info] admin (139.194.91.11) op.AddDocument UI::exitError error=Uploading an empty file. Upload is canceled. pagetitle=Folder 'DMS'
+May 19 18:11:22  [info] admin (139.194.91.11) op.Login
+May 19 18:15:35  [info] admin (139.194.91.11) op.EditFolder?folderid=1
+May 19 18:15:54  [info] admin (139.194.91.11) op.AddSubFolder?name=coba 1&folderid=1
+May 19 18:17:06  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:06  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:07  [info] admin (139.194.91.11) op.Ajax
+May 19 18:17:29  [info] admin (139.194.91.11) op.UsrMgr.php&action=adduser&login=fadhli
+May 19 18:17:52  [info] fadhli (139.194.91.11) op.Login
+May 19 18:18:28  [info] admin (139.194.91.11) op.Login
+May 19 18:18:58  [info] admin (139.194.91.11) op.GroupMgr&action=addgroup&name=Group 1
+May 19 18:19:06  [info] admin (139.194.91.11) op.GroupMgr?groupid=1&userid=3&action=addmember
+May 19 18:24:14  [info] admin (139.194.91.11) op.AddDocument UI::exitError error=Invalid Request Token pagetitle=Folder 'Invalid Request Token'
+May 19 18:24:21  [info] admin (139.194.91.11) op.AddDocument?name=document 1&folderid=1
+May 19 18:24:33  [info] admin (139.194.91.11) op.Download.php?documentid=1&vfile=1
+May 19 18:24:46  [info] admin (139.194.91.11) op.Download.php?documentid=1&version=1
+May 19 18:25:25  [info] admin (139.194.91.11) op.AddFile?name=CV Hayyu LKPP&documentid=1
+May 19 18:25:43  [info] admin (139.194.91.11) op.Download.php?documentid=1&file=1
+May 19 18:28:55  [info] admin (139.194.91.11) op.AddDocument?name=document 2&folderid=1
+May 19 18:29:01  [info] admin (139.194.91.11) op.ViewOnline.php?documentid=2&version=1
+May 19 18:30:22  [info] admin (139.194.91.11) op.Download.php?documentid=1&version=1
+May 19 18:30:34  [info] admin (139.194.91.11) op.ViewOnline.php?documentid=2&version=1
+May 19 18:49:21  [info] admin (139.194.91.11) op.EditFolder?folderid=1

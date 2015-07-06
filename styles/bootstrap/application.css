@@ -1,5 +1,5 @@
 body { /* Add top padding for full-width layout */
-	padding-top: 45px;
+	padding-top: 60px;
 }
 img.mimeicon {
   -moz-border-bottom-colors: none;
@@ -11,13 +11,6 @@ img.mimeicon {
   border-style: solid;
   border-width: 1px 2px 2px 1px;
 }
-
-.jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #006198;
 
 .list-action a {
 	text-decoration: none;

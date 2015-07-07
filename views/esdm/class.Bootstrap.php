@@ -405,7 +405,7 @@ $(document).ready(function () {
 			echo "<li id=\"first\"><a href=\"../out/out.AddSubFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_subfolder")."</a></li>\n";
 			echo "<li><a href=\"../out/out.AddDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_document")."</a></li>\n";
 			if($this->params['enablelargefileupload'])
-				echo "<li><a href=\"../out/out.AddMultiDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_multiple_documents")."</a></li>\n";
+				// echo "<li><a href=\"../out/out.AddMultiDocument.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("add_multiple_documents")."</a></li>\n";
 			echo "<li><a href=\"../out/out.EditFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("edit_folder_props")."</a></li>\n";
 			if ($folderID != $this->params['rootfolderid'] && $folder->getParent())
 				echo "<li><a href=\"../out/out.MoveFolder.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("move_folder")."</a></li>\n";
@@ -417,7 +417,7 @@ $(document).ready(function () {
 			if ($accessMode == M_ALL) {
 				echo "<li><a href=\"../out/out.FolderAccess.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("edit_folder_access")."</a></li>\n";
 			}
-			echo "<li><a href=\"../out/out.FolderNotify.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("edit_existing_notify")."</a></li>\n";
+			// echo "<li><a href=\"../out/out.FolderNotify.php?folderid=". $folderID ."&showtree=".showtree()."\">".getMLText("edit_existing_notify")."</a></li>\n";
 		}
 		if ($this->params['user']->isAdmin()) {
 			echo "<li><a href=\"../out/out.Indexer.php?folderid=". $folderID ."\">".getMLText("index_folder")."</a></li>\n";
@@ -459,7 +459,7 @@ $(document).ready(function () {
 			echo "<li><a href=\"../out/out.DocumentAccess". $docid ."\">".getMLText("edit_document_access")."</a></li>";
 		}
 		if ($accessMode >= M_READ && !$this->params['user']->isGuest()) {
-			echo "<li><a href=\"../out/out.DocumentNotify". $docid ."\">".getMLText("edit_existing_notify")."</a></li>";
+			// echo "<li><a href=\"../out/out.DocumentNotify". $docid ."\">".getMLText("edit_existing_notify")."</a></li>";
 		}
 		echo "</ul>\n";
 		echo "</div>\n";
@@ -477,7 +477,7 @@ $(document).ready(function () {
 		if (!$this->params['user']->isAdmin()) 
 			echo "<li><a href=\"../out/out.UserDefaultKeywords.php\">".getMLText("edit_default_keywords")."</a></li>\n";
 
-		echo "<li><a href=\"../out/out.ManageNotify.php\">".getMLText("edit_existing_notify")."</a></li>\n";
+		// echo "<li><a href=\"../out/out.ManageNotify.php\">".getMLText("edit_existing_notify")."</a></li>\n";
 
 		if ($this->params['enableusersview']){
 			echo "<li><a href=\"../out/out.UsrView.php\">".getMLText("users")."</a></li>\n";

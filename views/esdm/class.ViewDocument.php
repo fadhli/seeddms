@@ -383,20 +383,7 @@ class SeedDMS_View_ViewDocument extends SeedDMS_Bootstrap_Style {
 		}
 		if($accessop->mayOverwriteStatus()) {
 			print "<li><a href='../out/out.OverrideContentStatus.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-align-justify\"></i>".getMLText("change_status")."</a></li>";
-		}
-		if($workflowmode == 'traditional' || $workflowmode == 'traditional_only_approval') {
-			// Allow changing reviewers/approvals only if not reviewed
-			if($accessop->maySetReviewersApprovers()) {
-				print "<li><a href='../out/out.SetReviewersApprovers.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-edit\"></i>".getMLText("change_assignments")."</a></li>";
-			}
-		} else {
-			if($accessop->maySetWorkflow()) {
-				if(!$workflow) {
-					print "<li><a href='../out/out.SetWorkflow.php?documentid=".$documentid."&version=".$latestContent->getVersion()."'><i class=\"icon-random\"></i>".getMLText("set_workflow")."</a></li>";
-				}
-			}
-		}
-		/*
+		}		/*
 		if($accessop->maySetExpires()) {
 			print "<li><a href='../out/out.SetExpires.php?documentid=".$documentid."'><i class=\"icon-time\"></i>".getMLText("set_expiry")."</a></li>";
 		}

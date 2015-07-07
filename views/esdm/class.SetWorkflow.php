@@ -94,7 +94,9 @@ function showWorkflow(selectObj) {
 			<tr>	
 				<td>
 				</td>
-				<td><input type="submit" class="btn" value="<?php printMLText("set_workflow");?>"></td>
+				<td>
+					<!-- <input type="submit" class="btn" value="<?php printMLText("set_workflow");?>"> -->
+				</td>
 			</tr>
 		</table>
 		</form>

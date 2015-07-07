@@ -141,9 +141,6 @@ function checkForm()
 		}
 
 		$msg = getMLText("max_upload_size").": ".ini_get( "upload_max_filesize");
-		if($enablelargefileupload) {
-			$msg .= "<p>".sprintf(getMLText('link_alt_updatedocument'), "out.AddMultiDocument.php?folderid=".$folder->getID()."&showtree=".showtree())."</p>";
-		}
 		$this->warningMsg($msg);
 		$this->contentContainerStart();
 ?>
